@@ -1,0 +1,14 @@
+{
+  "name": "ssh-totp-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "log-beautify": "^1.2.0",
+    "node-ssh": "^13.2.0",
+    "totp-generator": "^1.0.0"
+  }
+}
