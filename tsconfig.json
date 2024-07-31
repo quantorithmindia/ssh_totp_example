@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",  // Choose your module resolution strategy (node, classic)
+    "target": "ESNext",     // Or whichever target you want (e.g., ES6, ESNext)
+    "module": "ES2015",    // Choose your module system (CommonJS, ESNext, etc.)
+    "outDir": "./dist",    // Output directory for compiled JavaScript
+    "strict": true,         // Enable strict type checking
+    "esModuleInterop": true, // Helps with module interop between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Avoid case-sensitive issues on different OS
+    "skipLibCheck": true,    // Skips type checking of declaration files (e.g., node.d.ts)
+    "sourceMap": true, // Generates source maps
+    "allowJs": true,        // Allow importing JavaScript files
+    "checkJs": false,       // Don't type-check JavaScript files (optional)
+    "noImplicitAny": false, // Allow implicit 'any' types for flexibility (optional)
+  },
+  "include": [
+    "./src/**/*.ts"   // Include all TypeScript files in your 'src' directory
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

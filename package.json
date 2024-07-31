@@ -3,12 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "npx tsx src/app.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "log-beautify": "^1.2.0",
     "node-ssh": "^13.2.0",
+    "nodemon": "^3.1.4",
     "totp-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^22.0.0",
+    "@types/node-ssh": "^7.0.6",
+    "@types/totp-generator": "^0.0.8",
+    "tsx": "^4.16.3"
   }
 }
