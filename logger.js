@@ -1,13 +1,13 @@
 const logger = require('log-beautify');
 
 function log(...data) {
-    data.unshift("🟢");
-    logger.info(data.toString())
+    const formattedMessage = `[🟢] - ${data}`;
+    logger.info(formattedMessage)
 }
 
 function error(...data) {
-    data.unshift("🔴");
-    logger.error(data.toString())
+    const formattedMessage = `[🔴] - ${data}`;
+    logger.error(formattedMessage)
 }
 
 module.exports = {
